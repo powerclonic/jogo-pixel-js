@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #444;
+}
+
+.contentContainer {
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+.dummyBlock {
+    background-color: #F00;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0px; 
+    top: 0px;
+    z-index: 2;
+}
+
+.invContainer {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 3;
+}
+
+.invBlock {
+    width: 300px;
+    height: fit-content;
+    background-color: #FFF;
+    margin: 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.colorInput {
+    width: 75%;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 15px;
+    border: 2.5px solid black;
+    text-align: center;
+}
+
+.invOpt {
+    transition: .5s;
+    border: 5px solid #AAA;
+}
+
+.invOpt:hover {
+    transform: scale(1.15);
+}
+
+.newBlock {
+    position: absolute;
+}
+
+.eraseBtn {
+    margin-top: 10px;
+    width: 75%;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    font-size: .85rem;
+    transition: .5s;
+}
+
+.eraseBtn:hover {
+    background-color: #DDD;
+}
+
+.sizeSelector {
+    width: 75%;
+}
