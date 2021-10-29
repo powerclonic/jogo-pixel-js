@@ -5,45 +5,31 @@
 
 body {
     background-color: #444;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contentContainer {
     background-color: #FFF;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    border-radius: 10px;
 }
 
 
 .dummyBlock {
     background-color: #F00;
+    display: block;
     height: 50px;
     width: 50px;
-    position: absolute;
-    left: 0px; 
-    top: 0px;
-    z-index: 2;
-}
-
-.invContainer {
-    position: fixed;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 3;
+    position: relative;
+    z-index: 4;
 }
 
 .invBlock {
     width: 300px;
-    height: fit-content;
-    background-color: #FFF;
+    height: 125px;
+    background-color: #EEE;
     margin: 25px;
     border-radius: 25px;
     display: flex;
@@ -51,6 +37,10 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    left: calc(50% - 150px);
+    top: calc(100% - 175px);
+    position: absolute;
+    border: 5px solid #000
 }
 
 .colorInput {
